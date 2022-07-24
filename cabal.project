@@ -1,0 +1,15 @@
+packages:
+  bug-repro.cabal
+
+optional-packages:
+  ../clash-compiler/clash-prelude,
+  ../clash-compiler/clash-lib,
+  ../clash-compiler/clash-ghc
+
+constraints: clash-prelude -multiple-hidden
+
+package recursion-schemes
+  optimization: False
+
+write-ghc-environment-files: always
+
